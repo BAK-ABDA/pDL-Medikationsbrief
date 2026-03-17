@@ -1,5 +1,25 @@
 # Medikationsbrief – Webbasierter Prototyp
 
+### Inhaltsverzeichnis
+- [Überblick](#überblick)
+- [Funktionsumfang](#funktionsumfang)
+    - [1. Allgemeine Formularstruktur](#1-allgemeine-formularstruktur)
+    - [2. Sperr- und Freigabefunktion von Eingabefeldern](#2-sperr--und-freigabefunktion-von-eingabefeldern)
+    - [3. Logos und Dateiuploads](#3-logos-und-dateiuploads)
+    - [4. Auffälligkeiten & arzneimittelbezogene Probleme](#4-auffälligkeiten--arzneimittelbezogene-probleme)
+    - [5. Medizinische Zusatzinformationen](#5-medizinische-zusatzinformationen)
+    - [6. Analysegrundlagen](#6-analysegrundlagen)
+    - [7. PDF-Generierung](#7-pdf-generierung)
+- [Technischer Aufbau](#technischer-aufbau)
+    - [Verwendete Technologien](#verwendete-technologien)
+    - [Eingebundene Bibliotheken (lokal gehostet)](#eingebundene-bibliotheken-lokal-gehostet)
+    - [JavaScript-Modulstruktur (Auszug)](#javascript-modulstruktur-auszug)
+- [Datenschutz & Speicherung](#datenschutz--speicherung)
+- [Ziel & Einordnung](#ziel--einordnung)
+- [Lizenz & Hinweise](#lizenz--hinweise)
+
+---
+
 ## Überblick
 Dieses Projekt stellt eine **webbasierte Anwendung zur Erstellung eines Medikationsbriefs** bereit.  
 Der Fokus liegt auf der **strukturierten Erfassung medizinisch relevanter Informationen**, der **Dokumentation arzneimittelbezogener Probleme** sowie der **generierten Ausgabe als PDF-Dokument**.
@@ -133,7 +153,7 @@ Logo, Texte, Auswahlfelder und strukturierte Inhalte werden korrekt im Dokument 
 ### Eingebundene Bibliotheken (lokal gehostet)
 - SortableJS – Drag & Drop
 - Choices.js – erweiterte Dropdowns
-- Flatpickr – Datumsauswahl (inkl. de-Lokalisierung)
+- Flatpickr – Datumsauswahl (inkl. de‑Lokalisierung)
 - DOMPurify – Sanitizing von Eingaben
 - html2canvas – HTML-Rendering
 - jsPDF – PDF-Erzeugung
