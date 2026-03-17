@@ -1,0 +1,146 @@
+.logo-upload-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.logo-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo-left,
+.logo-right {
+  height: 100px; 
+  max-width: 150px;
+  object-fit: contain;
+}
+
+#logo-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  position: relative;
+  z-index: 10; 
+}
+
+.remove-btn,
+#logo-remove {
+  margin-left: 10px;     
+  vertical-align: middle;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 20; 
+}
+
+.remove-btn:hover,
+#logo-remove:hover {
+  background-color: #c0392b;
+}
+
+.upload-label {
+  margin-left: 24px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
+.upload-area {
+  position: relative;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  width: 340px;              
+  min-width: 340px;          
+  min-height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, all 0.3s;
+  box-sizing: border-box;   
+}
+
+.upload-area:hover {
+  border-color: #007acc;
+  box-shadow: 0 0 10px rgba(0, 122, 204, 0.2);
+}
+
+.upload-area.drag-over {
+  border-color: #4CAF50;
+  background-color: #f0f8f0;
+}
+
+.upload-area input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.upload-placeholder {
+  color: #999;
+  text-align: center;
+  font-size: 1rem;
+  max-width: 90%;
+  line-height: 1.4;
+  margin: 0;
+  cursor: pointer;
+}
+
+.upload-area img {
+  max-height: 220px;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+#pdf-upload {
+  display: none;
+}
+
+#pdf-preview {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  gap: 8px; 
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.pdf-icon {
+  font-size: 2rem;    
+  align-self: center; 
+}
+
+#pdf-filename {
+  margin: 0;
+  word-break: break-word; 
+}
+
+#pdf-remove {
+  align-self: center; 
+  margin-top: 0;
+}
+
+
+

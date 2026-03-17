@@ -1,0 +1,41 @@
+.institution-info-block {
+  position: relative; 
+}
+
+
+.autocomplete-box {
+  position: absolute;
+  top: 100%;           
+  left: 0;             
+  background: #fff;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  max-height: 180px;
+  overflow-y: auto;
+  z-index: 1000;
+  width: 100%;          
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  margin-top: 4px;
+  font-size: 15px;
+}
+
+.autocomplete-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.autocomplete-item:hover {
+  background: #f0f6ff;
+  color: #007aff;
+}
+
+.autocomplete-item.highlighted {
+  background: #f0f6ff;
+  color: #007aff;
+}
+
+
+

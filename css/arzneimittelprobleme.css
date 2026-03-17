@@ -1,0 +1,64 @@
+.problem-block {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: #fefefe;
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center; 
+  gap: 10px;           
+  flex-wrap: wrap;     
+}
+
+.problem-block label {
+  display: block;
+  flex-basis: 100%; 
+  margin-bottom: 8px;
+}
+
+.problem-block textarea {
+  flex-grow: 1;          
+  min-height: 80px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.problem-block button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 40px;         
+  align-self: center;  
+  flex-shrink: 0;       
+}
+
+.problem-block button:hover {
+  background-color: #c0392b;
+}
+
+#problemCategorySelect {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22gray%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M7%2010l5%205%205-5H7z%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+}
+
