@@ -31,6 +31,15 @@ body {
   max-width: 900px;
 }
 
+.content-column-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  flex: 1;
+  max-width: 775px;
+  margin: -45px auto 0;    
+}
+
 #form-content {
   z-index: 10;
   flex: 1;                 
@@ -322,6 +331,22 @@ label > input[type="checkbox"] {
   color: #666;
 }
 
+
+.datenschutz-hinweis {     
+  padding: 12px 28px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #bfc5cc;                
+  border-radius: 3px;
+  text-align: center;
+}
+
+.datenschutz-hinweis strong {
+  color: #999;       
+  font-weight: 600;   
+}
+
 .institution-info-hinweis {
   background-color: #eaf6ee;     
   border-left: 4px solid #2e7d32; 
@@ -496,8 +521,46 @@ textarea:focus {
   text-decoration: underline;
 }
 
+.c-menu-socials__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
 
+.c-menu-socials__list__item {
+  display: inline-flex;
+}
 
+.c-link--as-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: transform 0.18s ease, opacity 0.18s ease, box-shadow 0.18s ease;
+  transform-origin: center;
+  text-decoration: none;
+}
+
+.c-link--as-icon svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.c-link--as-icon:hover,
+.c-link--as-icon:focus-visible {
+  transform: scale(1.14);
+  opacity: 0.92;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+  outline: none;
+}
 
 
 

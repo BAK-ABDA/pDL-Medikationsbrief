@@ -162,7 +162,7 @@ async function generatePDF(mode = 'final') {
             pdf.text(pageText, pdfWidth - 35, yFooter);
 
             const year = new Date().getFullYear();
-            const brandText = `Medikationsbrief® ist eine eingetragene Marke der ABDA. © ${year} ABDA.`;
+            const brandText = `Der Medikationsbrief® ist ein eingetragenes Design der ABDA. © ${year} ABDA.`;
             pdf.text(brandText, pdfWidth / 2, yFooter, { align: "center" });
 
             if (logoBase64) {
