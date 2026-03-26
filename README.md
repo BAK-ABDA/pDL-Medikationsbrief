@@ -218,7 +218,7 @@ Geeignet für den Einsatz in **datenschutzsensiblen Umgebungen**.
 Diese Anwendung dient als  
 **referenzhafte produktive Umsetzung** eines Medikationsbrief-Werkzeugs im Apothekenkontext.
 
-Alternative technische Implementierungen durch AVSe sind möglich, sofern **Funktionalität, Fachlichkeit und Design** eingehalten werden.
+Alternative technische Implementierungen durch AVS sind möglich, sofern **Funktionalität, Fachlichkeit und Design** eingehalten werden.
 
 ---
 
