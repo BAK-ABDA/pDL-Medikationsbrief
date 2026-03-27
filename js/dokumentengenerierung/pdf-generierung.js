@@ -164,7 +164,7 @@ async function generatePDF(mode = 'final') {
 
         const year = new Date().getFullYear();
         const textBefore = "Der Medikationsbrief";
-        const textAfter  = `ist ein eingetragenes Design. © ${year} ABDA.`;
+        const textAfter  = `ist als eingetragenes Design geschützt. © ${year} ABDA.`;
 
         const r = footerFontSize * 0.12;         
         const gap = footerFontSize * 0.09;      
