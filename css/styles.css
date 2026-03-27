@@ -337,7 +337,7 @@ label > input[type="checkbox"] {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 0.95rem;
-  color: #bfc5cc;                
+  color: #adb3ba;               
   border-radius: 3px;
   text-align: center;
 }
@@ -507,7 +507,7 @@ textarea:focus {
   padding-top: -10px;
   border-top: 1px #ccc;
   font-size: 0.9rem;
-  color: #ccc;
+  color: #adb3ba; 
   text-align: center;
 }
 
