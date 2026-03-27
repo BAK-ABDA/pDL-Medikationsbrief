@@ -150,26 +150,60 @@ async function generatePDF(mode = 'final') {
         const pixelToMM = (pixels) => pixels * 0.264583;
 
         const addPageNumberAndLogo = (pdf, currentPage, totalPages, logoBase64) => {
-            const pdfWidth  = pdf.internal.pageSize.getWidth();
-            const pdfHeight = pdf.internal.pageSize.getHeight();
+        const pdfWidth  = pdf.internal.pageSize.getWidth();
+        const pdfHeight = pdf.internal.pageSize.getHeight();
 
-            pdf.setFontSize(9);
-            pdf.setTextColor(100, 100, 100);
+        const footerFontSize = 9;
+        pdf.setFontSize(footerFontSize);
+        pdf.setTextColor(100, 100, 100);
 
-            const yFooter = pdfHeight - 10;
+        const yFooter = pdfHeight - 10;
 
-            const pageText = `Seite ${currentPage} von ${totalPages}`;
-            pdf.text(pageText, pdfWidth - 35, yFooter);
+        const pageText = `Seite ${currentPage} von ${totalPages}`;
+        pdf.text(pageText, pdfWidth - 35, yFooter);
 
-            const year = new Date().getFullYear();
-            const brandText = `Der MedikationsbriefⒹ ist ein eingetragenes Design. © ${year} ABDA.`;
-            pdf.text(brandText, pdfWidth / 2, yFooter, { align: "center" });
+        const year = new Date().getFullYear();
+        const textBefore = "Der Medikationsbrief";
+        const textAfter  = `ist ein eingetragenes Design. © ${year} ABDA.`;
 
-            if (logoBase64) {
-                const logoWidth = 21;
-                const logoHeight = 10.5;
-                pdf.addImage(logoBase64, "PNG", 185, 3, logoWidth, logoHeight);
-            }
+        const r = footerFontSize * 0.12;         
+        const gap = footerFontSize * 0.09;      
+        const markerWidth = (2 * r) + (2 * gap);
+
+        const cy = yFooter - (footerFontSize * 0.125);
+
+        const dFontSize = footerFontSize * 0.6;
+        const dYAdjust  = footerFontSize * 0.08;
+
+        const circleLineWidth = 0.2;
+        pdf.setLineWidth(circleLineWidth);
+        pdf.setDrawColor(100, 100, 100);
+
+        pdf.setFontSize(footerFontSize);
+        const wBefore = pdf.getTextWidth(textBefore);
+        const wAfter  = pdf.getTextWidth(textAfter);
+
+        const totalWidth = wBefore + markerWidth + wAfter;
+        const xLeft = (pdfWidth - totalWidth) / 2;
+
+        pdf.text(textBefore, xLeft, yFooter);
+
+        const cx = xLeft + wBefore + gap + r;
+
+        pdf.circle(cx, cy, r);
+
+        pdf.setFontSize(dFontSize);
+        pdf.text("D", cx, cy + dYAdjust, { align: "center" });
+
+        pdf.setFontSize(footerFontSize);
+        const xAfter = xLeft + wBefore + markerWidth;
+        pdf.text(textAfter, xAfter, yFooter);
+
+        if (logoBase64) {
+            const logoWidth = 21;
+            const logoHeight = 10.5;
+            pdf.addImage(logoBase64, "PNG", 185, 3, logoWidth, logoHeight);
+        }
         };
 
         const values = getInputValues();
