@@ -224,4 +224,4 @@ Alternative technische Implementierungen durch AVS sind möglich, sofern **Funkt
 
 ## Lizenz & Hinweise
 
-Der **Medikationsbrief®** ist ein eingetragenes Design der **ABDA**.
+Der **MedikationsbriefⒹ** ist als eingetragenes Design geschützt. © 2026 **ABDA**. 
