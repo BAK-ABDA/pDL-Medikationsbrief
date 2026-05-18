@@ -137,9 +137,11 @@ async function generatePDF(mode = 'final') {
 
     try {
         const pdf = new jsPDF({
-            unit: 'mm',
-            format: 'a4',
-            orientation: 'portrait'
+        unit: 'mm',
+        format: 'a4',
+        orientation: 'portrait',
+        compress: true,
+        putOnlyUsedFonts: true
         });
 
         const pdfWidth = 210;
