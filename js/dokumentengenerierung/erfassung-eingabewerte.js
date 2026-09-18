@@ -92,7 +92,7 @@ function getInputValues() {
 
     anredeText: document.getElementById("anrede-text")?.value.trim() || "Sehr geehrte/ Sehr geehrter",
     arztName: getValue('input[placeholder="Name Ärztin/Arzt"]', "[Name Ärztin/Arzt]"),
-    grund: getValue('input[placeholder="optional: auf Wunsch von… / auf Grund von…"]', "[optional: auf Wunsch von…/ auf Grund von…]"),
+    grund: getValue('#beratungstext', ''),
     medikationsbriefInfo: document.querySelector('input[name="medikationsbrief-info"]:checked')?.value || 'nicht angegeben',
     
     symptomeValue: getCheckedValue('symptome'),
